@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 
 <head>
@@ -8,39 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vamos</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
 </head>
 
 <body>
-
     <main>
+        
+        <div class="data">
+            <label for="user">
+                Nome
+            </label>
+            <input type="text" id="user" name="user">
+            <label for="password">
+                Senha
+            </label>
+            <input type="password" id="password" name="password">
+        </div>        
 
-        <form>
-            <div class="data">
-                <label for="user">
-                    Nome
-                </label>
-                <input type="text" id="user" name="user">
-                <label for="password">
-                    Senha
-                </label>
-                <input type="password" id="password" name="password">
-            </div>
-            <div class="send">
-                <input type="submit" id="button" onclick="mostraDados()">
-            </div>
-        </form>
+        <div class="send">
+            <input type="submit" id="button" onclick="mostraDados()">
+        </div>
 
-
+    </main>    
+        
         <section class="spoiler">
             <h1 id="pegadinha">
                 Seus dados estão seguros!!!
             </h1>
         </section>
-
-    </main>
-
-    <script type="text/javascript" src="assets/javascript/main.js"></script>
-
+    
 </body>
 
 </html>
