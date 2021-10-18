@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Andada Pro', serif;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff90;
+}
+
+main {
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-family: 'Andada Pro', serif;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff90;
+}
+
+button {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 40px;
+    font-size: 1vw;
+    transition: ease-in-out 0.2s;
+}
+
+button:hover {
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 5px #00000090;
+    height: 5.5vh;
+    width: 10.5vw;
+    letter-spacing: 0.1rem;
+    font-size: 1.1vw;
+}
+
+.dark-theme {}
