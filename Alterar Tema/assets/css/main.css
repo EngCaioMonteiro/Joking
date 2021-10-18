@@ -11,15 +11,28 @@ body {
     flex-direction: column;
 }
 
-header {
-    font-family: 'Andada Pro', serif;
+header {    
     display: flex;
     height: 10vh;
     width: 100vw;
     background: #000000;
     justify-content: center;
     align-items: center;
-    color: #ffffff90;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+header.dark-mode {
+    background: #e9e9e9;
+    color: #000000;
+}
+
+h1 {
+    font-family: 'Andada Pro', serif;
+}
+
+h1.dark-mode {
+    font-family: sans-serif;
 }
 
 main {
@@ -29,6 +42,10 @@ main {
     background: #ffffff;
     justify-content: center;
     align-items: center;
+}
+
+main.dark-mode {
+    background: #000000;
 }
 
 footer {
@@ -42,21 +59,38 @@ footer {
     color: #ffffff90;
 }
 
+footer.dark-mode {
+    background: #e9e9e9;
+    color: #000000;
+}
+
 button {
     height: 5vh;
     width: 10vw;
     border-radius: 40px;
     font-size: 1vw;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.3s;
+    border: none;
+}
+
+button.dark-mode {
+    background: #ffffff;
+    color: #000000
 }
 
 button:hover {
-    border: 1px solid #000000;
+    border: 0px solid #000000;
     box-shadow: 1px 1px 5px #00000090;
-    height: 5.5vh;
-    width: 10.5vw;
-    letter-spacing: 0.1rem;
-    font-size: 1.1vw;
+    height: 5.2vh;
+    width: 10.2vw;
+    letter-spacing: 0.05rem;
+    font-size: 1.05vw;
 }
 
-.dark-theme {}
+button:active {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: ease-in-out 0.5s;
+    color: transparent;
+}
